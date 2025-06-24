@@ -1,144 +1,109 @@
-<<<<<<< HEAD
-
 body {
-    background-color: #f0f0f0;
-=======
-body {
-    background-color: #2c2f3a;
->>>>>>> 6b2c419528c22ad54c4b0fff000aff0ea0d37e64
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    margin: 0;
-    font-family: sans-serif;
-}
-
-#calcBody {
-    background-color: #e5ffff;
-    padding: 20px;
-    border-radius: 40px;
-    width: 280px;
-}
-
-#screen {
-<<<<<<< HEAD
-    background-color: #52f507;
-=======
-    background-color: #2c2f3a;
->>>>>>> 6b2c419528c22ad54c4b0fff000aff0ea0d37e64
-    height: 60px;
-    border-radius: 8px;
-    margin-bottom: 20px;
-    color: white;
-    font-size: 2rem;
-    text-align: right;
-    padding: 10px;
-}
-
-#buttons {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 10px;
-}
-
-.button {
-<<<<<<< HEAD
-    background-color: #03c9e8;
-=======
-    background-color: #91c9e8;
->>>>>>> 6b2c419528c22ad54c4b0fff000aff0ea0d37e64
-    color: white;
-    font-size: 1.5rem;
-    height: 50px;
-    border-radius: 15px;
-    text-align: center;
-    line-height: 50px;
-    cursor: pointer;
-}
-
-.operator {
-<<<<<<< HEAD
-    background-color: #4a7510;
-}
-
-.equals {
-    background-color: #d80528;
-=======
-    background-color: #4a75c9;
-}
-
-.equals {
-    background-color: #f06d44;
->>>>>>> 6b2c419528c22ad54c4b0fff000aff0ea0d37e64
-    grid-row: span 4;
-    height: 220px;
-    line-height: 220px;
-}
-
-.button:hover {
-    opacity: 0.9;
-}
-<<<<<<< HEAD
-:root {
-  --bg-color: #f0f0f0;
-  --calc-bg: #ffffff;
-  --text-color: #000000;
-  --display-bg: #222;
-  --display-text: #ffffff;
-  --btn-bg: #f1f1f1;
-  --btn-text: #000;
-}
-body:has(#toggle:checked) {
-  --bg-color: #1a1a1a;
-  --calc-bg: #2c2c2c;
-  --text-color: #ffffff;
-  --display-bg: #000;
-  --display-text: #0f0;
-  --btn-bg: #444;
-  --btn-text: #fff;
-}
-body {
-  background-color: var(--bg-color);
-  color: var(--text-color);
-  font-family: sans-serif;
-  transition: background 0.3s, color 0.3s;
+  margin: 0;
+  background-color: #2d3542;
+  font-family: Arial, sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   height: 100vh;
-  gap: 1rem;
+  justify-content: center;
 }
-
-.calculator {
-  background-color: var(--calc-bg);
-  color: var(--text-color);
-  padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
-  width: 300px;
-}
-
-.display {
-  background-color: var(--display-bg);
-  color: var(--display-text);
-  padding: 15px;
-  font-size: 2em;
-  border-radius: 8px;
+.mode-switch {
+  color: white;
   margin-bottom: 20px;
-  text-align: right;
+  font-size: 1rem;
+}
+.calculator {
+  background-color: #ddfafa;
+  border-radius: 40px;
+  padding: 20px;
+  width: 300px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+.screen {
+  background-color: #2d3542;
+  height: 60px;
+  border-radius: 10px;
+  color: white;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0 10px;
+  margin-bottom: 20px;
+}
+.button-row,
+.button-grid {
+  display: grid;
+  gap: 10px;
 }
 
-.btn {
-  background-color: var(--btn-bg);
-  color: var(--btn-text);
-  padding: 20px;
-  border: none;
-  border-radius: 8px;
-  font-size: 1.2em;
-  cursor: pointer;
-  transition: background 0.3s;
+.button-row {
+  grid-template-columns: repeat(4, 1fr);
+  margin-bottom: 10px;
 }
-=======
->>>>>>> 6b2c419528c22ad54c4b0fff000aff0ea0d37e64
+
+.button-grid {
+  grid-template-columns: repeat(4, 1fr);
+}
+.btn {
+  background-color: #9ccbe2;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  border-radius: 15px;
+  padding: 15px 0;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.btn:hover {
+  background-color: #7ab8d7;
+}
+
+.operator {
+  background-color: #4d6d98;
+}
+
+.operator:hover {
+  background-color: #3b547a;
+}
+
+.equals {
+  background-color: #f56a42;
+  grid-row: span 4;
+  height: 100%;
+  font-weight: bold;
+}
+
+.equals:hover {
+  background-color: #e25b34;
+}
+.dark-mode {
+  background-color: #1e1e1e;
+}
+
+.dark-mode .calculator {
+  background-color: #333;
+}
+
+.dark-mode .screen {
+  background-color: #000;
+  color: #0f0;
+}
+
+.dark-mode .btn {
+  background-color: #555;
+}
+
+.dark-mode .operator {
+  background-color: #666;
+}
+
+.dark-mode .equals {
+  background-color: #f56a42;
+}
+
+.dark-mode .btn:hover {
+  background-color: #777;
+}
