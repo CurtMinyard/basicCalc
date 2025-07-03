@@ -22,6 +22,7 @@ if (currentInput) {
     previousInput = currentInput;
     currentInput = '';
 break;
+}
 case '=':
 if (currentInput && previousInput && operator) {
 const result = calculate(previousInput, currentInput, operator);
